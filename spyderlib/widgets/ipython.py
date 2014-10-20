@@ -631,7 +631,7 @@ class IPythonClient(QWidget, SaveHistoryMixin):
         
         # Gui completion widget
         gui_comp_o = self.get_option('use_gui_completion')
-        completions = {True: 'droplist', False: 'ncurses'}
+        completions = {True: 'droplist', False: 'plain'}
         spy_cfg.IPythonWidget.gui_completion = completions[gui_comp_o]
 
         # Pager
